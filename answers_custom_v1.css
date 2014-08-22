@@ -1,4 +1,5 @@
-<script type="text/javascript" src="http://webapps.library.nyu.edu/bobcat/javascript/embed-functions-nolib.js"></script>
+
+ /*<script type="text/javascript" src="http://webapps.library.nyu.edu/bobcat/javascript/embed-functions-nolib.js"></script>
 <script type="text/javascript">
 var oldshowTEdit = showTEdit;
 
@@ -16,11 +17,73 @@ d.removeChild( d.firstChild );
 }
 </script>
 
+*/
+
+
+/* original Answers styles */
+
+/*
+
+body {background: #eff0e8 no-repeat;
+min-height: 100%; height: 100%;
+background-color: #eff0e8;}
+   body {
+	height:100%;
+	font-size:small; 
+	font-family: arial, sans-serif;
+	color: #000000;
+	margin: 0;
+	padding: 0; 
+        }
+p {
+     
+	
+	font-size:small; 
+	font-family: arial, sans-serif;
+	color: #000;
+        }
+   h1, .h1 { font-size:large; color:#a51320;font-family: arial, sans-serif;}
+   h2, .h2 { font-size: medium; color: #623e24; font-family: arial, sans-serif;} 
+   h3, .h3 { font-size: small;color: #623e24; font-family: arial, sans-serif;} 
+
+#tabsI a {background:transparent url(http://library.nyu.edu/libguides/leftboth.gif) no-repeat scroll left top;}
+
+#tabsI a span {color:#ffffff; background:transparent url(http://library.nyu.edu/libguides/rightboth.gif) no-repeat scroll right top;}
+
+.dropmenudiv a:hover{color: #fefefe; background-color:#6c8044;}
+
+
+
+
+
+<style>
+#qformbutton {
+	background-color: #A4121F;
+	border: 1px solid #1443AF;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	padding: 2px 10px;
+	vertical-align: middle;
+	height: 28px;
+	width: 78px;
+} 
+</style> 
+
+
+
+ */
+
 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 <style>
 body, div, p, table, tr, th, td, span, h1, h2, h3, h4, ul, li { 
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: normal; }
 
 h1 {
@@ -30,28 +93,29 @@ h1 {
 	padding: 2px 0px 0px 8px;
 	}
 
-#guide_header_title, #guide_header_title h1 { 
+.homeheader1, .homeheader1 h1, .sysname { 
 	display: block;
 	margin: 2px; 
 	padding-top: 5px;
 	font-family: Montserrat, Helvetica, arial, sans-serif !important;
+	text-align: left;
 	}
 	 
-	 
-.guidetitle{
-	/* font-weight: bold !important; */
+.askwrapper{
 	font-size: 25px;
 	font-family: Montserrat, Helvetica, arial, sans-serif !important;
 	color: #000;
 }
-
-.guideattr{
-	padding: 0px !important;
-}
+.askwrapper{
+	position: static;
+	display: block !important;
+	margin-left: 10px;
+}	 
 
 body, p, ul, li {
 	font-size: 14px; 
-	color: #000;}
+	color: #000;
+	}
 a {
 	color: #1f8acc;
 }
@@ -59,6 +123,30 @@ a {
 body {
 	background: none !important;
 	background-color: none !important;
+	min-height: 100%; height: 100%;
+	
+}
+
+#qformbutton {
+	background-color: #bbbbbb;
+	border: 1px solid #aaaaaa;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+} 
+
+#qformbutton{
+	color: #000;
+	font-family: Montserrat, Helvetica, arial, sans-serif;
+	font-size: 18px;
+	font-weight: normal !important;
+
+}
+
+.askbutton{
+		padding: 2px 10px !important;
 }
 
  /* top navigation breadcrumbs */
@@ -79,6 +167,97 @@ body {
 .breadcrumb_spacer { 
 	padding:5px; }
 
+
+/*band below tabs, with title of page and search box*/
+.stitle{
+	background-image: none;	
+	background-color: rgb(232, 232, 232);
+	text-align: left;
+	padding: 10px 12px;
+	margin-bottom: 0px !important;
+}
+
+#content{
+	padding: 0px;
+	border-bottom: 1px solid #b2b2b2;
+}
+
+#content, #contentleft, #contentcenter, #contentright, #content_home_r {
+	display: block;
+	float: left;
+	min-height: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: #e8e8e8 !important;
+	}
+
+#contentleft, #contentcenter, #contentright {
+	margin: 4px;
+}
+#contentcenter{
+	margin-left: 4px;
+}
+
+#content_home_r{
+	margin-top: 4px;
+}
+
+/* boxes inside content container */
+.headerbox{
+	background-image: none !important;
+	background-color: #bbbbbb !important;
+	margin-bottom: 0px !important;
+	padding: 4px 4px 5px 5px;
+}
+
+.roundbox headerbox {
+	background-color: #bbbbbb !important;
+	border-radius: 0px !important;
+	margin-bottom: 0px !important;
+	}
+
+.headerbox h2 {
+	color: #000 !important;
+	font: 14px Montserrat, Helvetica, arial, sans-serif !important;
+	display: block;
+}
+
+.outerbox {
+	background-color: #e8e8e8 !important;
+	padding: 0px !important;
+	margin: 0px 8px 8px 8px !important;
+	}
+
+.roundbox outerbox {
+	background-color: #e8e8e8 !important;
+	border-radius: 0px !important;
+	margin: 0px;
+	}
+
+.roundbox innerbox {
+	background-color: #FFFFFF;
+	border-radius: 0px !important;
+	border-top: none;
+	padding: 16px;
+} 
+
+#mwlist, .leftmwcol{
+	margin: 0px !important;
+}
+
+.innerbox{
+	border: 1px solid #bbbbbb !important;
+}	
+
+#recentpopular{
+	margin-top: 16px !important;
+}
+
+
+
+/* below are the custom styles from the LibGuides, many elements are similar in LibAnswers */
+
+/*
 .pagetitle {
 	display: block;
 	font: 25px Montserrat, Helvetica, arial, sans-serif !important;
@@ -100,6 +279,8 @@ body {
 
 /*tabs at top of page, below guide title, above page content*/
 
+
+/*
 #tabsI, #tabs12{
 	border: none !important;
 }
@@ -130,6 +311,8 @@ body {
 	}
 
 /*tab of the page you're on*/
+
+/*
 #current a span {
 	color: #000;
 	background-color: #e8e8e8;
@@ -137,7 +320,8 @@ body {
 	}
 
 /*for sub-pages*/
-.dropmenudiv a:hover {
+
+/*.dropmenudiv a:hover {
 	font-family:Montserrat,helvetica, arial,sans-serif !important;
 	font-weight:normal !important;
 	background-color: #e8e8e8;
@@ -157,7 +341,9 @@ body {
 }
 
 /*band below tabs, with title of page and search box*/
-.stitle{
+
+
+/*.stitle{
 	background-image: none;	
 	background-color: rgb(232, 232, 232);
 	text-align: left;
@@ -170,7 +356,9 @@ body {
 	display: none;
 	}
 /* main profile content shows up only on profile pages or main homepage */
-#main_profile_content{
+
+
+/*#main_profile_content{
 	border: none !important;
 }
 
@@ -209,7 +397,9 @@ div.roundbox{
 }
 
 /* boxes inside content container */
-.headerbox {
+
+
+/*.headerbox {
 	background-color: #bbbbbb;
 	border-radius: 0px !important;
 	margin-bottom: 0px !important;
@@ -231,7 +421,8 @@ div.roundbox{
 
  /* librarian profile boxes ONLY */
  	
-.innerbox, .innerboxprofile {
+
+/*.innerbox, .innerboxprofile {
 	background-color: #FFFFFF;
 	border-radius: 0px !important;
 	border: 1px solid #bbbbbb;
@@ -245,6 +436,7 @@ div.roundbox{
 
 /* center content boxes in a list form */
 
+/*
 .largetext {
 	background-image: none;
 	background-color: #bbbbbb !important;
